@@ -166,7 +166,7 @@ header {
         .main_section .middle_section .middle_header_demo .demo_item .demo_item_image {
           width: 100%;
           height: 370px;
-          background: #00b4d8;
+          background: #fff;
           border-radius: 6px;
           overflow: hidden;
           background-position: top;
