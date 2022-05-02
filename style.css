@@ -6,6 +6,9 @@
 body {
   background: #EEF3F9; }
 
+hr {
+  color: #00b4d8; }
+
 header {
   display: flex;
   justify-content: space-between; }
@@ -13,8 +16,8 @@ header {
     width: 24%;
     border-radius: 2px;
     padding: 5px 16px;
-    background: #fff;
-    box-shadow: 4px 6px 7px -8px #053a79; }
+    box-shadow: 4px 6px 7px -8px #053a79;
+    background-color: #fff; }
     header .header_left .top_profile {
       display: flex;
       align-items: center;
@@ -125,8 +128,6 @@ header {
         align-items: center;
         font-size: 17px;
         color: #000; }
-    .main_section .left_section hr {
-      color: #00b4d8; }
     .main_section .left_section .left_link_down .left_link_pic {
       background: #00d4b2;
       width: 30px;
@@ -286,22 +287,22 @@ header {
 
 .middle_header_demo_profile {
   width: 100%;
+  margin-top: 40px;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between; }
+  justify-content: space-between;
+  border-radius: 6px;
+  background-color: #fff;
+  box-shadow: 0px 0.5px 10px -7px #00b4d8; }
   .middle_header_demo_profile .notice_area {
     padding: 16px;
-    margin-top: 40px;
     width: 100%;
-    border-radius: 6px;
-    background-color: #fff;
-    box-shadow: 0px 0.5px 10px -7px #00b4d8;
-    display: flex;
-    align-items: baseline; }
+    display: flex; }
     .middle_header_demo_profile .notice_area .notice_logo {
       margin-right: 12px; }
       .middle_header_demo_profile .notice_area .notice_logo img {
-        width: 35px; }
+        width: 35px;
+        border-radius: 50%; }
     .middle_header_demo_profile .notice_area .notice_node h2 {
       font-weight: 400; }
     .middle_header_demo_profile .notice_area .notice_node p {
@@ -311,28 +312,41 @@ header {
   width: 100%;
   margin-top: 16px;
   height: 200px;
-  padding: 16px;
-  border-radius: 6px;
-  background-color: #fff;
-  box-shadow: 0px 0.5px 10px -7px #00b4d8; }
+  padding: 16px; }
 
 .skil_area {
   width: 100%;
   margin-top: 16px;
-  height: 200px;
-  padding: 16px;
-  border-radius: 6px;
-  background-color: #fff;
-  box-shadow: 0px 0.5px 10px -7px #00b4d8; }
+  padding: 16px; }
+  .skil_area h2 {
+    margin-bottom: 28px;
+    margin-left: 47px;
+    color: #3a3a3a; }
+  .skil_area .skil_section {
+    display: flex;
+    align-items: center; }
+    .skil_area .skil_section .skill_img {
+      width: 45%; }
+      .skil_area .skil_section .skill_img img {
+        width: 100%; }
+    .skil_area .skil_section .skill_item {
+      width: 45%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-evenly; }
+      .skil_area .skil_section .skill_item p {
+        font-size: 14px;
+        padding: 5px 16px;
+        border-radius: 100px;
+        border: 1px solid #00d4b2;
+        text-align: center;
+        margin: 3px; }
 
 .services_area {
   width: 100%;
   margin-top: 16px;
   height: 200px;
-  padding: 16px;
-  border-radius: 6px;
-  background-color: #fff;
-  box-shadow: 0px 0.5px 10px -7px #00b4d8; }
+  padding: 16px; }
 
 .demo_item_pro {
   width: 100%;
