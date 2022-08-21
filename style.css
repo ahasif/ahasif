@@ -13,7 +13,7 @@ header {
   display: flex;
   justify-content: space-between; }
   header .header_left {
-    width: 24%;
+    width: 22%;
     border-radius: 2px;
     padding: 5px 16px;
     box-shadow: 4px 6px 7px -8px #053a79;
@@ -40,7 +40,7 @@ header {
           margin: 0 10px;
           align-items: center; }
   header .header_middle {
-    width: 75.77%;
+    width: 77.77%;
     border-radius: 2px;
     height: 50px;
     background: #fff;
@@ -96,10 +96,9 @@ header {
 
 .main_section {
   display: flex;
-  justify-content: space-between;
   height: 91.6vh; }
   .main_section .left_section {
-    width: 24%;
+    width: 22%;
     height: 100%;
     border-radius: 2px;
     padding: 5px 16px;
@@ -134,9 +133,11 @@ header {
       height: 30px;
       border-radius: 6px; }
   .main_section .middle_section {
-    width: 48%;
-    height: 100%;
+    width: 54%;
     margin-top: 5px;
+    margin-left: 1%;
+    margin-right: 1%;
+    height: 100%;
     overflow-y: scroll; }
     .main_section .middle_section .middle_header {
       width: 100%;
@@ -188,16 +189,17 @@ header {
             text-align: center;
             transition: 0.5s; }
   .main_section .right_section {
-    width: 24%;
+    width: 22%;
     height: 100%;
     padding-right: 16px;
     margin-top: 4px;
     overflow-y: scroll; }
     .main_section .right_section .order_now {
       width: 100%;
-      height: 100px;
+      height: 16.5vh;
       background: #fff;
-      border-radius: 6px; }
+      border-radius: 6px;
+      margin-top: 16.6px; }
       .main_section .right_section .order_now a {
         text-align: center;
         display: block;
@@ -207,7 +209,7 @@ header {
     .main_section .right_section .day_night {
       margin-top: 6px;
       width: 100%;
-      height: 70vh;
+      height: 71.7vh;
       background: #fff;
       border-radius: 6px; }
 
@@ -294,33 +296,87 @@ header {
   border-radius: 6px;
   background-color: #fff;
   box-shadow: 0px 0.5px 10px -7px #00b4d8; }
-  .middle_header_demo_profile .notice_area {
-    padding: 16px;
+  .middle_header_demo_profile .professional-area {
     width: 100%;
-    display: flex; }
-    .middle_header_demo_profile .notice_area .notice_logo {
+    display: flex;
+    padding: 16px; }
+    .middle_header_demo_profile .professional-area .about_logo {
       margin-right: 12px; }
-      .middle_header_demo_profile .notice_area .notice_logo img {
+      .middle_header_demo_profile .professional-area .about_logo img {
         width: 35px;
         border-radius: 50%; }
-    .middle_header_demo_profile .notice_area .notice_node h2 {
-      font-weight: 400; }
-    .middle_header_demo_profile .notice_area .notice_node p {
-      color: #626266; }
+    .middle_header_demo_profile .professional-area .personal_skils {
+      width: 100%; }
+      .middle_header_demo_profile .professional-area .personal_skils h2 {
+        font-weight: 400; }
+      .middle_header_demo_profile .professional-area .personal_skils .skill_progress p {
+        margin-bottom: 6px;
+        font-weight: 600; }
+      .middle_header_demo_profile .professional-area .personal_skils .progress {
+        border-radius: 16px;
+        margin-bottom: 10px; }
+        .middle_header_demo_profile .professional-area .personal_skils .progress .progress-bar {
+          border-radius: 16px;
+          background-color: #000; }
 
-.edex_area {
-  width: 100%;
-  margin-top: 16px;
-  height: 200px;
-  padding: 16px; }
+.resume {
+  padding-top: 50px;
+  padding-bottom: 30px;
+  background: #f9f9f9;
+  padding-left: 0;
+  padding-right: 16px; }
+
+.timeline {
+  list-style-type: none;
+  position: relative; }
+
+.timeline::before {
+  content: "";
+  background: #555;
+  display: inline-block;
+  position: absolute;
+  left: 29px;
+  width: 2px;
+  height: 100%;
+  z-index: 1; }
+
+.timeline li {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 20px;
+  background: #fff; }
+  .timeline li h4 {
+    background-color: #000;
+    padding: 5px 0px 5px 20px;
+    color: #fff;
+    font-size: 15px; }
+    .timeline li h4 span {
+      font-weight: bold;
+      color: #ccc; }
+  .timeline li p {
+    padding: 0px 5px 10px 20px; }
+
+.timeline li::before {
+  content: "";
+  background: #fff;
+  display: inline-block;
+  position: absolute;
+  border-radius: 50%;
+  border: 3px solid #000;
+  left: 20px;
+  width: 20px;
+  height: 20px;
+  z-index: 1; }
 
 .skil_area {
+  background: #f9f9f9;
   width: 100%;
-  margin-top: 16px;
-  padding: 16px; }
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 16px;
+  padding-right: 16px; }
   .skil_area h2 {
     margin-bottom: 28px;
-    margin-left: 47px;
     color: #3a3a3a; }
   .skil_area .skil_section {
     display: flex;
@@ -342,17 +398,43 @@ header {
         text-align: center;
         margin: 3px; }
 
-.services_area {
+/**************Services************/
+.services {
   width: 100%;
-  margin-top: 16px;
-  height: 200px;
-  padding: 16px; }
+  padding-top: 50px;
+  padding-bottom: 50px; }
+  .services h1 {
+    margin-bottom: 15px; }
+  .services .services-hero {
+    display: grid;
+    padding-left: 16px;
+    padding-right: 16px; }
+    .services .services-hero .services-box {
+      background: #f9f9f9;
+      padding: 10px;
+      margin-top: 20px;
+      border-top-right-radius: 50px;
+      border-bottom-left-radius: 50px;
+      transition: background ease-in-out .25s; }
+      .services .services-hero .services-box svg {
+        margin: 0 10px;
+        font-size: 20px; }
+      .services .services-hero .services-box span {
+        margin: 3px;
+        font-size: 20px;
+        font-weight: bold; }
+      .services .services-hero .services-box p {
+        font-size: 15px;
+        margin-top: 20px;
+        color: #777;
+        text-align: center; }
+
+.services-box:hover {
+  background: #E8E8E8 !important; }
 
 .demo_item_pro {
   width: 100%;
-  margin-top: 16px;
   height: 200px;
-  padding: 16px;
   border-radius: 6px;
   background-color: #fff;
   box-shadow: 0px 0.5px 10px -7px #00b4d8; }
